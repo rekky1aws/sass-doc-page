@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sass Intro</title>
+	<link rel="stylesheet" type="text/css" href="style/output.css">
+</head>
+<body>
+	<header>
+		<img src="media/images/sass-logo.png">
+		<h1>Introduction à SASS.</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Installation</h2>
+			<p>
+				Installation de la version Ruby de SASS.
+			</p>
+			<code>
+				$ sudo apt install ruby-sass
+			</code>
+			<p>
+				Pour des raisons de practicité, nous allons aussi installer le mode watch
+			</p>
+			<code>
+				$ sudo apt install ruby-listen <br>
+				$ sudo gem install sass-listen
+			</code>
+		</section>
+
+		<section>
+			<h2>Utilisation</h2>
+			<p>
+				Pour utiliser SASS, il va falloir un fichier source en .scss, la syntaxe classique de SASS. Cette syntaxe contient le CSS, cela veut dire que tout code CSS est valide en SCSS. On va ensuite pourvoir compiler le fichier grace a cette commande.
+			</p>
+			<code>
+				$ sass < src_file >:< destination_file >
+			</code>
+			<p>
+				Grace au reste de l'installation que nous avons fait ci-dessus, nous allons pouvoir utiliser le paramètre --watch pour faire en sorte que le fichier se compile automatiquement a chaque changement sur le fichier source.
+			</p>
+			<code>
+				$ sass < src_file >:< destination_file > --watch
+			</code>
+		</section>
+	</main>
+</body>
+</html>
